@@ -1,0 +1,105 @@
+Task 1:
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int n;
+  cout << "Enter the number of natural numbers to sum: ";
+  cin >> n;
+
+  int sum = 0;
+  for (int i = 1; i <= n; i++) {
+    sum += i;
+  }
+
+  cout << "The sum of the first " << n << " natural numbers is " << sum << endl;
+
+  return 0;
+}
+
+
+
+
+Task 2:
+
+#include <iostream>
+
+int main() {
+    using namespace std;
+
+    int number, n;
+
+    // Ask the user for the number whose table they want to print
+    cout << "Enter a number to print its table: ";
+    cin >> number;
+
+    // Ask the user for the range of the table
+    cout << "Enter the number of terms in the table: ";
+    cin >> n;
+
+    // Print the table
+    cout << "Table of " << number << ":\n";
+    for (int i = 1; i <= n; i++) {
+        cout << number << " x " << i << " = " << number * i << endl;
+    }
+
+    return 0;
+}
+
+
+
+
+Task 3:
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int n;
+  cout << "Enter a number: ";
+  cin >> n;
+
+  long factorial = 1;
+  for (int i = 1; i <= n; i++) {
+    factorial *= i;
+  }
+
+  cout << "The factorial of " << n << " is " << factorial << endl;
+
+  return 0;
+}
+
+
+
+
+
+Task 4:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n, c;
+  cout << "Enter a number: ";
+  cin >> n;
+
+  int a = 0;
+  int b = 1;
+
+  cout << "The Fibonacci sequence up to " << n << " is: " << endl;
+  cout << a << " " << b << " ";
+
+  for (int i = 2; i < n; i++) {
+    c = a + b;
+    cout << c << " ";
+    a = b;
+    b = c;
+  }
+
+  cout << endl;
+
+  return 0;
+}
